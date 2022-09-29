@@ -4,10 +4,13 @@
     --details-dark:#294E6B;
     --details-light-blue:#5AADED;
     --details-white:#ffffff;
+    --details-black:#000000;
+    --detals-gray:#d3d3d3d5;
     --cancel: #dd0202;
     --green-bttn: #03ac03;
     --yellow-bttn:#e4e404;
     --black-shadow:#00000050;
+    
     
     font-family: 'Finlandica', sans-serif;
 }

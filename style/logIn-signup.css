@@ -26,7 +26,7 @@ input {
     width: fit-content;
     cursor: pointer;
 }
-button {
+.signin-up-form a {
     font-weight: 400;
     font-size: 1rem;
     border-radius: 5px;
@@ -35,6 +35,8 @@ button {
     border: none;
     margin-left: 0.5rem;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--details-black);
 }
 .button-log:hover{
     background-color: var(--green-bttn);
