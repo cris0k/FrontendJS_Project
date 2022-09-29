@@ -1,0 +1,52 @@
+.signin-up-form {
+    background-color: var(--background-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 440px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin-bottom: 28px;
+    background-color: var(--details-white);
+    box-shadow: 0 2px 6px var(--black-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input {
+    margin: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border-color: var(--details-dark);
+    padding: 3px;
+    width: fit-content;
+    cursor: pointer;
+}
+button {
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--details-light-blue);
+    padding: 8px 10px;
+    border: none;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.button-log:hover{
+    background-color: var(--green-bttn);
+    transition: background-color .3s linear;
+}
+.button-sign:hover{
+    background-color: var(--green-bttn);
+    transition: background-color .3s linear;
+    
+}
+.button-cancel:hover{
+    background-color: var(--cancel);
+    transition: background-color .3s linear;
+    
+}
