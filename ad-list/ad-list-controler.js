@@ -45,6 +45,8 @@ export class AdListControler {
       divElement.innerHTML = buildAdView(ad)
 
       this.adsContainerElement.appendChild(divElement);
+
+      
     }
   }
 

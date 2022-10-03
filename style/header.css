@@ -17,8 +17,7 @@
 .navbar {
     margin-bottom: 0.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     
 }
 
@@ -31,6 +30,7 @@
     box-shadow: 0 2px 6px var(--black-shadow);
     padding: 5px;
     border-radius: 5%;
+    margin-left: 20px;
 
 }
 .navbar a:hover{

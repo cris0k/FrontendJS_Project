@@ -1,6 +1,6 @@
 :root {
     font-size: 20px;
-    --background-color:#a7d9ff;
+    --background-color:#c2d0ff;
     --header-footer:#FFA000;
     --details-dark:#294E6B;
     --details-light-blue:#5AADED;
@@ -35,7 +35,7 @@
     box-shadow: 0 2px 6px var(--black-shadow);
     padding: 5px;
     margin: 5px;
-    background-color: var(--details-light-blue);
+    background-color: var(--background-color);
 }
 
 .ad-img {
