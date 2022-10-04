@@ -6,6 +6,7 @@ export class SignupController {
     this.signupElement = nodeElement;
 
     this.subscribeToEvents()
+    
   }
 
   subscribeToEvents() {
@@ -36,22 +37,24 @@ export class SignupController {
     
     if (passwordElement.value.length < minLength ) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `The password must have be at least ${minLength} characters long`)
+      return false;
     }
 
     if (passwordElement.value !== confirmPasswordElement.value) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Passwords do not match`)
+      return false;
     }
     
     const regExp = new RegExp(/^[a-zA-Z0-9]*$/)
 
     if (regExp.test(passwordElement.value)) {
-      this.createUser()
-     
+      console.log("regExp validation done")
     } else { 
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Simbols not allowed. Only letters and numbers`)
-    } 
+      return false;
+    }
+    this.createUser();
 
-   
   }
 
   async createUser() {
@@ -68,6 +71,7 @@ export class SignupController {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Something went wrong and the user has not been created`)
     }
   }
+  
 }
 
 /* // comportamiento de nuestro formulario
