@@ -3,7 +3,7 @@ class SparrestApi {
     baseUrl = 'http://localhost:8000'
     endpoints = {
       login: '/auth/login',
-      signup: '/auth/signup',
+      signup: '/auth/register',
       ads: '/api/ads',
     }
     constructor() {}

@@ -26,23 +26,29 @@ input {
     width: fit-content;
     cursor: pointer;
 }
-.signin-up-form a {
-    font-weight: 400;
+.signin-up-form .button-cancel, .button-sign, .button-log {
+    font-weight: 500;
     font-size: 1rem;
     border-radius: 5px;
     background-color: var(--details-light-blue);
-    padding: 8px 10px;
+    padding: 5px 10px;
     border: none;
     margin-left: 0.5rem;
     cursor: pointer;
     text-decoration: none;
     color: var(--details-black);
+    
 }
-.button-log:hover{
+
+.button-sign[disabled]{
+    pointer-events: none; 
+    background-color: var(--disabled);
+}
+.button-log:hover {
     background-color: var(--green-bttn);
     transition: background-color .3s linear;
 }
-.button-sign:hover{
+.button-sign:hover {
     background-color: var(--green-bttn);
     transition: background-color .3s linear;
     

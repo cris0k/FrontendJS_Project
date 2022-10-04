@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/logIn-signup.css">
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/footer.css">
@@ -17,13 +18,14 @@
 </header>
 <body class="app-body">
     <main class="main-content">
+        <section class="notification"></section>
         
-       <form class="signin-up-form" method="post">
+        <form class="signin-up-form" method="post">
             <div>
-                <label for="name">User Name</label>
+                <label for="username">User Name</label>
             </div>
             <div>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <input type="text" id="username" name="username" placeholder="Enter your name">
                 
             </div>
             <div>
@@ -36,10 +38,10 @@
                 <label for="password">Confirm Password</label>
             </div>
             <div>
-                <input type="password" id="password" name="password" placeholder="Confirm your password">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
             </div>
             <div>
-                <a class="button-sign">Sign Up</a>
+                <button class="button-sign" id="createUserButton" disabled  type="submit">Sign Up</button>
                 <a href="/" class="button-cancel">Cancel</a>
             </div>
         </form>
@@ -49,5 +51,6 @@
         <p> C.K. Frontend Javascript Project
         </p>
     </footer>
+    <script type="module" src="./signup/index.js"></script>
 </body>
 </html>
