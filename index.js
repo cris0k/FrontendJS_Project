@@ -9,5 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const notificationController = new NotificationController(notificationElement)
         const adListControler = new AdListControler(adListElement)
   }
+  const handleUserLogged = () => {
+    const token = localStorage.getItem('token')
+    const userActions = document.querySelector('#user-actions')
+    if (token) {
+      userActions.innerHTML = '<a class="newpost" href="/createAd.html">Post New Advert</a>'
+    }
+  }
+
   createControllers();
+  handleUserLogged();
 });

@@ -67,6 +67,7 @@ export class SignupController {
       const jwt = await loginApiUser(username, password)
       localStorage.setItem('token', jwt)
       console.log("token",jwt)
+      /* window.location.href="/"; */
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Something went wrong and the user has not been created`)
     }

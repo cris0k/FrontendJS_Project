@@ -1,0 +1,26 @@
+.ad-detail-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin:0 auto;
+}
+.ad-data{
+    margin-left: 20px;
+}
+.delete-bttn {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--details-light-blue);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--details-black);
+    
+}
+.delete-bttn:hover{
+    background-color: var(--cancel);
+    transition: background-color .3s linear;
+    
+}

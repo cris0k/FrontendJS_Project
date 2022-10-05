@@ -8,14 +8,15 @@ export const buildAdView = (ads) => {
 
   const adView = `
   <div class="ad">
-    <a href="http://localhost:8080/">
+    <a href="http://localhost:8080/adDetail.html?id=${ads.id}">
       <img class="ad-img" src="${ads.photo}" alt="${ads.name}"></img>
       
       <p class="ad-name" >${ads.name}</p>
     </a>
     <p>${ads.sale}</p>
     <p>Price: ${ads.price}€</p>
-    </div>
+    
+    </div> 
   `
   return adView;
 }

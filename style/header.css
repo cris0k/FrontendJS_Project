@@ -20,6 +20,10 @@
     justify-content: flex-end;
     
 }
+#user-actions {
+    margin-top: 5px;
+}
+
 
 .navbar a {
     color: var(--details-black);

@@ -10,7 +10,7 @@ class SparrestApi {
   
     async get(endpoint) {
       const response = await fetch(`${this.baseUrl}${endpoint}`)
-  
+      
       if (!response.ok) {
         throw new Error('No results')
       }

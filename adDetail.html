@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;800&display=swap" rel="stylesheet">
-    
-        
-    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/ad-detail.css">
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/spinner.css">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <title>Ad's Details</title>
 </head>
 <body class="app-body">
     <header class="main-header">
@@ -19,18 +17,12 @@
             VallapopJS
         </h1>
         <nav class="navbar">
-            
-            <a class="login" href="/logIn.html">Log In</a>
-            <a class="signup" href="/signUp.html">Sign Up</a>
-            <section id="user-actions"></section>
-            
+            <a href="/">Main Page</a>
         </nav>
     </header>
     <main class="main-content">
-        
-        <section id="notification"></section>
-        <section id="ad-list"></section>
-        
+        <section class="notification-container"></section>
+        <section class="ad-detail-container"></section>
     </main>
     <footer>
         <p> 
@@ -38,6 +30,6 @@
         </p>
     </footer>
     
-    <script type="module" src="index.js"></script>
+    <script type="module" src="./ad-detail/index.js"></script>
 </body>
 </html>
