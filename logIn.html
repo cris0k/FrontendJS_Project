@@ -19,12 +19,12 @@
     </header>
     <main class="main-content">
         
-        <form class="signin-up-form" method="post">
+        <form id="login-form" class="signin-up-form" method="post">
             <div>
-                <label for="name">User Name</label>
+                <label for="username">User Name</label>
             </div>
             <div>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <input type="text" id="username" name="username" placeholder="Enter your user name">
             </div>
             <div>
                 <label for="password">Password</label>
@@ -33,7 +33,7 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password">
             </div>
             <div>
-                <a class="button-log">Log In</a>
+                <button  class="button-log" id="loginUserBttn" type="submit" disabled>Log In</button>
                 <a href="/" class="button-cancel">Cancel</a>
             </div>
         </form>
@@ -42,5 +42,6 @@
         <p> C.K. Frontend Javascript Project
         </p>
     </footer>
+    <script type="module" src="./login/index.js"></script>
 </body>
 </html>

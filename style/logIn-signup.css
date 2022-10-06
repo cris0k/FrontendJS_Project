@@ -40,10 +40,11 @@ input {
     
 }
 
-.button-sign[disabled]{
+.button-sign[disabled], .button-log[disabled]{
     pointer-events: none; 
     background-color: var(--disabled);
 }
+
 .button-log:hover {
     background-color: var(--green-bttn);
     transition: background-color .3s linear;
@@ -58,3 +59,4 @@ input {
     transition: background-color .3s linear;
     
 }
+
