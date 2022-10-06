@@ -1,8 +1,11 @@
 export const buildAdDetail = (ads) => {
+  
   if (ads.sale === true){
     ads.sale = "Selling"
+    
   }else{
     ads.sale = "Searching"
+    
   }
 
   return `
@@ -15,7 +18,7 @@ export const buildAdDetail = (ads) => {
       <p>${ads.sale}</p>
       <p>Price: ${ads.price}€</p>
       <p>${ads.description}</p>
-      <button class="buy-sell-bttn" id="buy-sell-bttn">Purchase</button>
+      
     <button class="offer-bttn">Send an offer</button>
     <button class="delete-bttn" style="display:none">Delete Advert</button>
     </div>

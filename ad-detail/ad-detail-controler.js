@@ -30,6 +30,8 @@ export class AdDetailController {
 
       if (tokenData.userId === this.ads.userId) {
         const removeButton = this.adDetailElement.querySelector('.delete-bttn');
+        const offerButton = this.adDetailElement.querySelector('.offer-bttn')
+        offerButton.style.display = "none"
         removeButton.style.display = "block";
         removeButton.addEventListener('click', () => this.removeAd())
       }

@@ -7,7 +7,7 @@
 .ad-data{
     margin-left: 20px;
 }
-.delete-bttn {
+.delete-bttn, .offer-bttn {
     font-weight: 500;
     font-size: 1rem;
     border-radius: 5px;
@@ -21,6 +21,11 @@
 }
 .delete-bttn:hover{
     background-color: var(--cancel);
+    transition: background-color .3s linear;
+    
+}
+.offer-bttn:hover{
+    background-color: var(--green-bttn);
     transition: background-color .3s linear;
     
 }
