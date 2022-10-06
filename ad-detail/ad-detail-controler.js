@@ -29,8 +29,8 @@ export class AdDetailController {
       const tokenData = decodeToken(token);
 
       if (tokenData.userId === this.ads.userId) {
-        const removeButton = this.adDetailElement.querySelector('button');
-        removeButton.style.display = 'block';
+        const removeButton = this.adDetailElement.querySelector('.delete-bttn');
+        removeButton.style.display = "block";
         removeButton.addEventListener('click', () => this.removeAd())
       }
     }
@@ -45,7 +45,7 @@ export class AdDetailController {
         alert('Advert deleted successfully');
         window.location = '/'
       } catch (error) {
-        // pubsub para mostrar notificación de error
+        pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Sorry, the advert was not be deleted.')
       }
     }
   }

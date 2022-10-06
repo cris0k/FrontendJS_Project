@@ -67,7 +67,7 @@ export class SignupController {
       const jwt = await loginApiUser(username, password)
       localStorage.setItem('token', jwt)
       console.log("token",jwt)
-      /* window.location.href="/"; */
+      window.location.href="/";
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Something went wrong and the user has not been created`)
     }
@@ -77,6 +77,6 @@ export class SignupController {
 
 /* // comportamiento de nuestro formulario
 
-  
+    miau:1234567 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoibWlhdSIsImlhdCI6MTY2NTA1MzY0MywiZXhwIjoxNjY1MTQwMDQzfQ.rzSaz5UhHhCEPvlH6md5GQ_YOp9dyD31-RgfSIoCQ58
   - El usuario y la password NO pueden estar vacíos.
    */
