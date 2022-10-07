@@ -5,11 +5,12 @@
     margin:0 auto;
 }
 .ad-data{
+    font-size: 1.5rem;
     margin-left: 20px;
 }
 .delete-bttn, .offer-bttn {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 5px;
     background-color: var(--details-light-blue);
     padding: 5px 10px;

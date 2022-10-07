@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token')
     const userActions = document.querySelector('#user-actions')
     if (token) {
-      userActions.innerHTML = '<a class="newpost" href="/createAd.html">Post New Advert</a>'
+      userActions.innerHTML = '<a class="newpost" href="/newAd.html">Post New Advert</a>'
     }
   }
 
