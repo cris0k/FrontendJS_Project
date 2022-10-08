@@ -5,13 +5,20 @@
     position: sticky;
     
 }
+#user {
+    text-align: end;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 30px;
+    
+}
+
 .app-title {
     font-size: 3rem;
-    padding: 3px;
     font-weight: 600;
-    text-decoration: none;
     color: var(--details-white);
     text-align: center;
+    
 }
 
 .navbar {

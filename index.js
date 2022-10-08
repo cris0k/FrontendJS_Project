@@ -13,16 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const handleUserLogged = () => {
     const token = localStorage.getItem('token')
     const userActions = document.querySelector('#user-actions')
-    
-    if (token) {
-      userActions.innerHTML = '<a class="newpost" href="/newAd.html">Post New Advert</a>' 
-    }
     const tokenData = decodeToken(token);
     const loggedUser = document.querySelector('#user')
-
+    
     if (token) {
+      userActions.innerHTML = '<a class="newpost" href="/newAd.html">Post New Advert</a>'
       loggedUser.innerHTML = `<p>Hi ${tokenData.username}!</p>`
+      
     }
+    
   }
 
 
