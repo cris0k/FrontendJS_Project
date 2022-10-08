@@ -1,5 +1,6 @@
 import { NotificationController } from "./notifications/NotificationControler.js";
 import { AdListControler } from "./ad-list/ad-list-controler.js";
+import { decodeToken } from "../utils/decodeToken.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const createControllers = () => {
@@ -12,10 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const handleUserLogged = () => {
     const token = localStorage.getItem('token')
     const userActions = document.querySelector('#user-actions')
+    
     if (token) {
-      userActions.innerHTML = '<a class="newpost" href="/newAd.html">Post New Advert</a>'
+      userActions.innerHTML = '<a class="newpost" href="/newAd.html">Post New Advert</a>' 
+    }
+    const tokenData = decodeToken(token);
+    const loggedUser = document.querySelector('#user')
+
+    if (token) {
+      loggedUser.innerHTML = `<p>Hi ${tokenData.username}!</p>`
     }
   }
+
 
   createControllers();
   handleUserLogged();
