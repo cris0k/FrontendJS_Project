@@ -30,6 +30,9 @@ class SparrestApi {
           "Authorization": `Bearer ${token}`
         }
       })
+      if(!response.ok) {
+          throw new Error('Bad request')
+      }
   
       const data = await response.json()
   

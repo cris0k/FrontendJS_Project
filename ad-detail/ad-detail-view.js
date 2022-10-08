@@ -1,13 +1,11 @@
 export const buildAdDetail = (ads) => {
   
-  if (ads.sale === true){
-    ads.sale = "Selling"
-    
-  }else{
-    ads.sale = "Searching"
-    
-  }
+  const noPhotoImg = "https://lyrictheatreokc.com/wp-content/uploads/2021/11/Ciao-Ciao-Image-Coming-Soon-500px.jpg"
 
+  if(ads.photo === "") {
+      ads.photo = noPhotoImg
+    }
+  
   return `
     <div>
     <img class="ad-img" src="${ads.photo}" alt="${ads.name}"></img>

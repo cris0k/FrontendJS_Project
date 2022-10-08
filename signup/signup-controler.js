@@ -70,7 +70,7 @@ export class SignupController {
       alert(`Welcome ${username}. You have successfully signed up and logged in.`)
       
     } catch (error) {
-      pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Something went wrong and the new user could not be created`)
+      pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Username in use`)
     }
   }
   

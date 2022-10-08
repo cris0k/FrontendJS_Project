@@ -1,12 +1,12 @@
 export const buildAdView = (ads) => {
 
-  if (ads.sale === true){
-    ads.sale = "Selling"
-  }else{
-    ads.sale = "Searching"
-  }
+  const noPhotoImg = "https://lyrictheatreokc.com/wp-content/uploads/2021/11/Ciao-Ciao-Image-Coming-Soon-500px.jpg"
 
-  const adView = `
+  if(ads.photo === "") {
+      ads.photo = noPhotoImg
+    }
+  
+   const adView = `
   <div class="ad">
     <a href="http://localhost:8080/adDetail.html?id=${ads.id}">
       <img class="ad-img" src="${ads.photo}" alt="${ads.name}"></img>

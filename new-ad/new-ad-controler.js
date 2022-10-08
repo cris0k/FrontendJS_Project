@@ -34,13 +34,6 @@ export class CreateAdController {
     const description = formData.get('description');
     const sale = formData.get('selector');
     
-    const ad = {
-        photo : photo,
-        name : name,
-        price : price,
-        description : description,
-        sale : sale
-    }
-    createApiAd(ad);
+    createApiAd(photo,name,price,description,sale);
   }
 }

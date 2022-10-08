@@ -16,7 +16,9 @@ export class AdListControler {
     let ads = [];
 
     try {
+
       ads = await getAds();
+
     } catch (error) {
       
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Not able to load adverts. Try again later')
@@ -36,9 +38,11 @@ export class AdListControler {
     const divElement = document.createElement('div');
     divElement.innerHTML = buildEmptyAds()
     this.adsContainerElement.appendChild(divElement)
+    
   }
                               
   drawAds(ads) {
+    
     for (const ad of ads) {
       const divElement = document.createElement('div');
     
@@ -47,6 +51,7 @@ export class AdListControler {
       this.adsContainerElement.appendChild(divElement);
 
       
+
     }
   }
 
