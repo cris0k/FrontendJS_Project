@@ -13,8 +13,9 @@ export const buildAdView = (ads) => {
       
       <p class="ad-name" >${ads.name}</p>
     </a>
+    <p>${ads.price}€</p>
     <p>${ads.sale}</p>
-    <p>Price: ${ads.price}€</p>
+    
     
     </div> 
   `

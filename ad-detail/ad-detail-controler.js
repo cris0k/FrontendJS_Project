@@ -15,17 +15,18 @@ export class AdDetailController {
       this.ads = ads;
       this.adDetailElement.innerHTML = buildAdDetail(ads)
       this.drawRemoveButton()
+      this.offerAction()
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Error obraining advert')
     }
   }
 
   drawRemoveButton() {
-    // el usuario ha hecho login
+    
     const token = localStorage.getItem('token');
 
     if (token) {
-      // el usuario logado es el creador del ad que estamos viendo
+      
       const tokenData = decodeToken(token);
 
       if (tokenData.userId === this.ads.userId) {
@@ -34,6 +35,7 @@ export class AdDetailController {
         offerButton.style.display = "none"
         removeButton.style.display = "block";
         removeButton.addEventListener('click', () => this.removeAd())
+       
       }
     }
     
@@ -47,8 +49,15 @@ export class AdDetailController {
         alert('Advert deleted successfully');
         window.location = '/'
       } catch (error) {
-        pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Sorry, the advert was not be deleted.')
+        pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Sorry, the advert was not deleted.')
       }
     }
   }
+  
+  offerAction() {
+    const offerButton = this.adDetailElement.querySelector('.offer-bttn')
+    offerButton.addEventListener('click', () => alert ('Thank you for checking out my project! :)'))
+  }
+  
+
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
-    margin:0 auto;
+    margin:10px auto;
 }
 .ad-data{
     font-size: 1.5rem;

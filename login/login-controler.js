@@ -38,7 +38,7 @@ export class LoginController {
       const jwt = await loginApiUser(username, password)
       localStorage.setItem('token', jwt)
       window.location.href="/";
-      alert(`hi ${username}. You logged in successfully`)
+      alert(`Hi ${username}. You logged in successfully`)
     } catch (error) {
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, `Log in failed`)
     }
