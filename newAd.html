@@ -28,7 +28,7 @@
     <main class="main-content">
         <section class="notification"></section>
         
-        <form id="new-ad-form" class="new-ad-form" method="post">
+        <form id="new-ad-form" class="new-ad-form" method="post" novalidate>
             <div>
                 <label for="photo">Product's Photo URL</label>
             </div>
@@ -37,20 +37,20 @@
                 
             </div>
             <div>
-                <label for="name">Product's Name</label>
+                <label for="name">Product's Name*</label>
             </div>
             <div>
                 <input type="text" id="name" name="name" placeholder="Enter your product's name">
                 
             </div>
             <div>
-                <label for="price">Price</label>
+                <label for="price">Price*</label>
             </div>
             <div>
-                <input type="text" id="price" name="price" placeholder="Your price">
+                <input type="number" id="price" name="price" placeholder="Your price">
             </div>
             <div>
-                <label for="sale">Are you selling or looking for a product ?</label>
+                <label for="sale">Are you selling or looking for a product ?*</label>
             </div>
             <div class="selectors">
                 <label for="selling">Selling</label>
@@ -60,13 +60,13 @@
                 <input type="radio" name="selector" id="searching" value="searching">
             </div>
             <div>
-                <label for="description">Description</label>
+                <label for="description">Description*</label>
             </div>
             <div>
                 <textarea name="description" id="description" placeholder="Add a description of the product"></textarea>
             </div>
             <div>
-                <button class="button-post" id="postButton"  type="submit">Post Advert</button>
+                <button class="button-post" id="postButton"  type="submit" >Post Advert</button>
                 <a href="/" class="button-cancel">Cancel</a>
             </div>
         </form>
