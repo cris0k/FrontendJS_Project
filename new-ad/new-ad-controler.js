@@ -14,14 +14,15 @@ export class CreateAdController {
       event.preventDefault();
     })
     createAdButton.addEventListener('click', () => {
-        try {
-            this.createAd();
-            window.location = "/"
-            alert("Ad created successfully")
-        } catch (error) {
-            
-            pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Something went wrong and the ad coud not be created')
-        }
+      try {
+        this.createAd();
+        window.location = "/"
+        alert("Advert created successfully")
+        
+      } catch (error) {
+          
+        pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Something went wrong and the advert was not created')
+      }
       
     })
   }
