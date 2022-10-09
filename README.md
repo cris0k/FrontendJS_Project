@@ -19,15 +19,15 @@ Then, open a new empty window in your editor and clone the repository of the API
 https://github.com/kasappeal/sparrest.js.git
 
 ```
-Ones its clones, install all the dependencies:
+Ones its clones, install all the dependencies in the sparrest.js page:
 
 ```
 npm i
 ```
 
-Go back to the project and inside the folder `data` copy the file `db.json` and paste it into Sparrest.js.
+Go back to the project's page and inside the folder `data` copy the file `db.json` and paste it into sparrest.js 's page.
 
-This is the database that will be used to store all the adverts and user's data. 
+This is the "database" that will be used to store all the adverts and user's data. 
 
 There are already some adverts created so you have something to play with but feel free to delete it and start over if you wish.
 
