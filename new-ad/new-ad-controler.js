@@ -36,7 +36,8 @@ export class CreateAdController {
         alert("Advert created successfully")
       }
       
-    }catch {
+    } catch(error) {
+
       pubSub.publish(pubSub.TOPICS.NOTIFICATION_ERROR, 'Something went wrong and the advert was not created')
     }
     
